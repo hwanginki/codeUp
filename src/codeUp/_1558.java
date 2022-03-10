@@ -1,25 +1,21 @@
 package codeUp;
 
 import java.io.*;
-import java.util.*;
 
 public class _1558 {
-
-	public static void f(int x, int y) {
-		System.out.print((long) x + y);
+	
+	public static String f(String n) {
+		StringBuilder sb = new StringBuilder();
+		return sb.append(n).reverse().toString();
 	}
 
 	public static void main(String[] args) throws IOException {
-
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-
-		int x = Integer.parseInt(st.nextToken());
-		int y = Integer.parseInt(st.nextToken());
 		
-		f(x, y);
-
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String s = String.valueOf(br.readLine());
+		System.out.println(f(s));
 		br.close();
-
 	}
 }
+
