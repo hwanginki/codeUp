@@ -4,11 +4,7 @@ import java.io.*;
 
 public class _1912 {
 	static int recursive(int x) {
-		if (x == 1) {
-			return 1;
-		} else {
-			return x * recursive(x - 1);
-		}
+		if (x == 1) return 1; else return x * recursive(x - 1);
 	}
 
 	public static void main(String[] args) throws IOException {
