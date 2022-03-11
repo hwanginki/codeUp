@@ -19,4 +19,3 @@ public class _1905 {
 		br.close();
 	}
 }
-
